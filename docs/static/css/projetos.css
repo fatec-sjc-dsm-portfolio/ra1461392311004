@@ -1,0 +1,114 @@
+/* Títulos de seção */
+.page-title {
+  font-size: 2em;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Container de projetos */
+.proj-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+/* Cada projeto */
+.proj-container div {
+  border: #cacaca solid 1px;
+  background-color: #ECF0F1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 27%;
+  font-size: 130%;
+  padding: 1%;
+  margin: 1%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.proj-container div:hover {
+  background-color: #e5e5e6;
+}
+
+.proj-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.proj-container img {
+  height: 12rem;
+  border-radius: 10px;
+  padding-bottom: 1%;
+}
+
+.proj-container p,
+.proj-container a {
+  padding-bottom: 1%;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 700px) {
+  .proj-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .proj-container div {
+    width: auto;
+    padding: 2%;
+    margin: 2%;
+  }
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  margin-bottom: 50px;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 100px;
+  width: 80%;
+  overflow-y: auto;
+  max-width: 600px;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.technologies img {
+  width: 32px;
+  margin: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

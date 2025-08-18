@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar{
+    background-color: #4a6d91;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .titulo{
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-text{
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo {
+    width: 70px;
+}
