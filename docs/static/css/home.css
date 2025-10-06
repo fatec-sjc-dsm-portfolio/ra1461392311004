@@ -1,87 +1,114 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #2c3e50;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 10px;
+    line-height: 1.25;
+  }
 }
 
 .intro-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
-    padding: 0 2%;
+    margin-top: 40px;
+    padding: 0 5%;
     gap: 20px;
 }
 
 .text-content {
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .intro-title {
     font-size: 2em;
-    color: #2c3e50;
-    text-align: left;
     font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
 }
 
-.intro-text {
+.intro-text,
+.goal-text {
     font-size: 1.2em;
     color: #7f8c8d;
     margin-bottom: 20px;
-    text-align: left;
-}
-
-.project-list {
-    list-style-type: disc;
-    margin-left: 40px;
-}
-
-.project-item {
-    font-size: 1em;
-    color: #34495e;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-.goal-text {
-    font-size: 1.2em;
-    color: #2c3e50;
-    text-align: left;
 }
 
 .image-content {
-    justify-content: center;
-    align-self: start;
-    max-width: 30%;
+  justify-content: center;
+  align-self: center;
+  max-width: 30%;
 }
 
 .profile-image {
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  justify-self: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-  
-  @media (max-width: 1024px) {
-    .intro-container {
-      flex-direction: column;
-    }
-  
-    .text-content {
-      max-width: 95%;
-    }
 
-    .project-item{
-      font-size: 1.5em;
-    }
-
-    .goal-text, .intro-text{
-      font-size: 1.7em;
-    }
-  
-    .image-content {
-      max-width: 50%;
-      align-self: center;
-    }
+@media (max-width: 1024px) {
+  .intro-container {
+    flex-direction: column;
   }
+
+  .text-content {
+    max-width: 95%;
+  }
+
+  .project-item {
+    font-size: 1.5em;
+  }
+
+  .goal-text,
+  .intro-text {
+    font-size: 1.7em;
+  }
+
+  .image-content {
+    max-width: 50%;
+    align-self: center;
+  }
+}
+
+.intro-buttons {
+    margin-top: 30px;
+}
+
+.btn-curriculo {
+    display: inline-block;
+    background-color: #2c3e50; /* cor principal */
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-curriculo:hover {
+    background-color: #34495e; /* leve escurecimento */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .intro-buttons {
+        text-align: center;
+    }
+
+    .btn-curriculo {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

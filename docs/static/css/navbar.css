@@ -1,37 +1,27 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.navbar{
-    background-color: #4a6d91;
-    padding: 10px 30px;
+.navbar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 5%;
+    background-color: #4a6d91;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.navbar div{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.navbar .titulo{
-    font-size: 1.5em;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.navbar-text{
-    font-weight: bold;
-    color: #ffffff;
+.navbar a {
     text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #acb3b9;
 }
 
 .logo {
-    width: 70px;
+    height: 70px;
 }

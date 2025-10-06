@@ -8,14 +8,14 @@
 .technologies {
     display: flex;
     flex-direction: row;
-    margin: 2%;
     flex-wrap: wrap;
-    align-items: end;
+    align-items: center;
+    gap: 1em;
     justify-content: space-around;
 }
 
 .technologies img{
-    width: 4em;
+    width: 3em;
 }
 
 .tech-container {
@@ -80,14 +80,11 @@
 
 .cert-container img{
     width: 70%;
-}
-
-.cert-container p{
+    border-radius: 10px;
     padding-bottom: 1%;
 }
 
-.cert-container img{
-    border-radius: 10px;
+.cert-container p{
     padding-bottom: 1%;
 }
 
@@ -104,6 +101,5 @@
         border-radius: 10px;
         padding: 2%;
         margin: 2%;
-        width: auto;
     }
 }

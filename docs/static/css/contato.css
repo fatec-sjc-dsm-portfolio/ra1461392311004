@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+/* ===== Seção Contato ===== */
+.contact-section {
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.2em;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    color: #475569;
+    margin-bottom: 40px;
+}
+
+/* ===== Links de Contato ===== */
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1e293b;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-link i {
+    font-size: 1.4em;
+}
+
+.contact-link:hover {
+    background-color: #3b82f6;
+    transform: translateY(-2px);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+    .contact-section {
+        margin: 50px 20px;
+    }
+
+    .contact-link {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}

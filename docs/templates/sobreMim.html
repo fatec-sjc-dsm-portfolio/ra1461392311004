@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Vieira - Sobre Mim</title>
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/sobre.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div>
+            <a href="../index.html" class="navbar-text">
+                <img src="../static/images/icons/logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+
+        <div>
+            <a href="./projetos.html" class="navbar-text">Projetos</a>
+            <a href="./experiencias.html" class="navbar-text">Experiências</a>
+            <a href="./sobreMim.html" class="navbar-text active">Sobre</a>
+            <a href="./contato.html" class="navbar-text">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== Seção 1: Sobre mim ===== -->
+        <h2 class="hobbies-title">Sobre Mim</h2>
+        <section class="sobre-section">
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>
+                        Atualmente tenho <span id="age"></span> anos e adoro fazer novas conexões, conhecer lugares
+                        novos e planejar coisas que tentem me tirar da zona de conforto, buscando sempre evoluir e
+                        estimular minha criatividade.
+                    </p>
+                    <p>
+                        Sou apaixonado por tecnologia e inovações, e estou sempre em busca de descobrir novidades e
+                        contribuir para projetos que façam a diferença na vida das pessoas.
+                    </p>
+
+                </div>
+
+                <div class="sobre-image">
+                    <img src="../static/images/fotos/fotoperfil.jpeg" alt="Foto de Felipe Vieira" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Seção 2: Hobbies e Interesses ===== -->
+        <h2 class="hobbies-title">Hobbies e Interesses</h2>
+        <section class="hobbies-section">
+
+            <div class="hobbie-item">
+                <div class="hobbie-text">
+                    <h3>Cozinhar</h3>
+                    <p>
+                        Sempre que possível, busco testar novas receitas e me desafiar na cozinha. Ultimamente, minhas
+                        receitas favoritas têm sido doces, principalmente brownies e bolos de cenoura com cobertura de
+                        brigadeiro.
+                    </p>
+                </div>
+                <div class="hobbie-image">
+                    <img src="../static/images/fotos/cozinhar.png" alt="Cozinhar" />
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies-section alt">
+            <div class="hobbie-item">
+                <div class="hobbie-image">
+                    <img src="../static/images/fotos/jogar.png" alt="Jogos" />
+                </div>
+                <div class="hobbie-text">
+                    <h3>Jogos</h3>
+                    <p>
+                        Desde pequeno jogar videogames sempre me cativou muito, atualmente no meu tempo livre, gosto principalmente de jogos de futebol, estratégia ou aventura.
+                    </p>
+                    <br/>
+                    <p>
+                        Curiosidade: Já participei de um campeonato de eFootball 2024 no Museu do Videogame Intinerante e terminei em 2° lugar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="hobbies-section">
+            <div class="hobbie-item">
+                <div class="hobbie-text">
+                    <h3>Fotografia</h3>
+                    <p>
+                        Outra das minhas paixões é de registrar momentos especiais e expontâneos, principalmente em viagens ou na natureza, permitindo eternizar e relambrar esses momentos com apenas poucas imagens.
+                    </p>
+                </div>
+                <div class="hobbie-image">
+                    <img src="../static/images/fotos/fotografias.jpeg" alt="Fotografia" />
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    const birthDate = new Date(2005, 8, 27);
+
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    // Ajusta se ainda não fez aniversário este ano
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    // Atualiza o span com a idade
+    document.getElementById("age").textContent = age;
+</script>
+
+</html>

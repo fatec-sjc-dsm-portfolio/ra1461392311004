@@ -1,87 +1,12 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    font-family:"Inter", sans-serif;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-  }
-
-
-@media (max-width: 700px){ 
-    body {
-    font-size: 70%;
-    }
-}
-
-footer{
-    margin-top: 3%;
-    padding: 0.9%;
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer a{
-    padding-right: 0.5%;
-    color: black
-}
-
-.footer img{
-    width: 2rem;
-}
-
-.nav {
-    background-color: #9dd2d8;
-    padding: 1%;
-}
-
-.imagens {
-    height: 90px;
-    width: 90px;
-    margin: auto;
-}
-
-.desc{
-    font-size: 150%;
-    margin: 1%;
-}
-
-.center {
-    text-align: center;
-}
-
-
-
-.links {
-    float: right;
-    padding-top: 3%;
-}
-
-.links img{
-    float: left;
-
-}
-
-.projetoModal {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.projetoModal a{
-    color: #000;
-    font-size: 120%;
-}
-
-.projetoModal img{
-    width: 100%;
-    border-radius: 1%;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #2c3e50;
+    line-height: 1.6;
 }
