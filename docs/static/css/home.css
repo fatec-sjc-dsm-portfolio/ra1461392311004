@@ -7,13 +7,6 @@ body {
   color: #2c3e50;
 }
 
-@media (max-width: 1024px) {
-  body {
-    padding: 10px;
-    line-height: 1.25;
-  }
-}
-
 .intro-container {
     display: flex;
     justify-content: space-around;
@@ -61,6 +54,11 @@ body {
     flex-direction: column;
   }
 
+  .intro-title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
   .text-content {
     max-width: 95%;
   }
@@ -71,7 +69,7 @@ body {
 
   .goal-text,
   .intro-text {
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
 
   .image-content {

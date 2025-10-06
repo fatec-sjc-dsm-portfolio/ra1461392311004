@@ -25,6 +25,11 @@
     /* ambos crescem e encolhem */
 }
 
+.exp-text .exp-titulo {
+    font-size: 1.7em;
+    color: #34495e;
+}
+
 /* Imagem */
 .exp-image img {
     width: 100%;
@@ -71,5 +76,9 @@
     .exp-image img {
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    .exp-titulo {
+        font-size: 1.2em;
     }
 }
