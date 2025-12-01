@@ -37,7 +37,7 @@ const projetosAcademicos = [
   },
   {
     titulo: "Sistema para gerenciamento de agentes de IA",
-    desc: "O projeto consiste em um sistema para criação e gerenciamento de agentes de inteligência artificial voltados ao atendimento interno de uma empresa. Projeto Integrador do 5° Semestre (Agosto/2024 - Dezembro/2024)",
+    desc: "O projeto consiste em um sistema para criação e gerenciamento de agentes de inteligência artificial voltados ao atendimento interno de uma empresa. Projeto Integrador do 5° Semestre (Janeiro/2025 - Junho/2025)",
     contr: "Neste projeto, atuei como Product Owner, fui responsavel por definir as prioridades do produto, garantir a comunicação eficaz entre a equipe e o cliente, além de desenvolver funcionalidades críticas do sistema e dar um apoio técnico para outros membros da equipe. Essa experiência aprimorou minhas habilidades de liderança, gestão de projetos e comunicação, além de fortalecer minha capacidade de negociação e empatia.",
     link: "https://github.com/Equipe-CodeLand/API-2025.1",
     img: "https://github.com/Equipe-CodeLand/API-2025.1/raw/main/docs/mvp-sprint1.gif",
