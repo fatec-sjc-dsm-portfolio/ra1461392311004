@@ -36,6 +36,24 @@ const projetosAcademicos = [
     softskills: ["Trabalho em Equipe", "Comunicação", "Autonomia", "Proatividade"],
   },
   {
+    titulo: "Sistema para gerenciamento de agentes de IA",
+    desc: "O projeto consiste em um sistema para criação e gerenciamento de agentes de inteligência artificial voltados ao atendimento interno de uma empresa. Projeto Integrador do 5° Semestre (Agosto/2024 - Dezembro/2024)",
+    contr: "Neste projeto, atuei como Product Owner, fui responsavel por definir as prioridades do produto, garantir a comunicação eficaz entre a equipe e o cliente, além de desenvolver funcionalidades críticas do sistema e dar um apoio técnico para outros membros da equipe. Essa experiência aprimorou minhas habilidades de liderança, gestão de projetos e comunicação, além de fortalecer minha capacidade de negociação e empatia.",
+    link: "https://github.com/Equipe-CodeLand/API-2025.1",
+    img: "https://github.com/Equipe-CodeLand/API-2025.1/raw/main/docs/mvp-sprint1.gif",
+    hardskils: ["React Native", "TypeScript", "Node.js", "Python", "Flask", "MySQL", "Docker", "AWS"],
+    softskills: ["Empatia", "Liderança","Trabalho em Equipe", "Comunicação", "Autonomia", "Proatividade"],
+  },
+  {
+    titulo: "Sistema para geração de relatórios sobre movimentação de estoque em linguagem natural",
+    desc: "Sistema de busca semântica que transforma grandes volumes de dados estruturados em relatórios sobre movimentação de estoque, além de uma interface de conversação em linguagem natural para dúvidas, Projeto Integrador do 6° Semestre (Agosto/2025 - Dezembro/2025)",
+    contr: "Neste projeto, atuei como Product Owner, fui responsavel por definir a visão do produto, priorizar funcionalidades e garantir que a equipe estivesse alinhada com os objetivos do projeto. Trabalhei na comunicação com o cliente para garantir que todas as suas necessidades fossem atendidas, além do desenvolvimento de algumas funcionalidades e preparação do ambiente em nuvem na AWS. Essa experiência aprimorou minhas habilidades de liderança, gestão de projetos e comunicação, além de fortalecer minha capacidade de negociação e empatia.",
+    link: "https://github.com/Equipe-CodeLand/API-2025.2",
+    img: "../static/images/capas/api6.gif",
+    hardskils: ["React", "TypeScript", "Node.js", "Python", "Flask", "MySQL", "Docker", "AWS", "Jira", "Figma"],
+    softskills: ["Liderança", "Resolução de conflitos", "Organização", "Trabalho em Equipe", "Comunicação", "Autonomia", "Proatividade"],
+  },
+  {
     titulo: "Aplicativo Mobile para Reporte de Problemas Urbanos (Alô Prefeito)",
     desc: "Aplicativo móvel desenvolvido com o objetivo de simplificar o processo de reporte de problemas urbanos, oferendo uma experiência simples e fluida, desde o reporte até o acompanhamento do processo de resolução do problema (Agosto/2024 - Dezembro/2024)",
     contr: "Trabalhei no desenvolvimento do aplicativo desde a concepção da ideia, prototipagem no Figma e desenvolvimento de cada funcionalidade através do React Native e Expo. Este projeto me proporcionou um grande avanço no meu processo criativo, buscando ideias inovadoras e que possuam aplicação prática no dia a dia, além do aprendizado em desenvolvimento mobile e aprimoramento de minhas habilidades em design de interface e experiência do usuário.",
@@ -99,7 +117,7 @@ const projetosProfissionais = [
   {
     titulo: "Iniciação Científica (INPE) - Protótipo de sistema para disseminação de dados sobre qualidade do ar",
     desc: "Desenvolvimento de um protótipo de sistema web para visualização da qualidade do ar em todo o Brasil, utilizando técnicas de processamento de imagem aplicado ao sensoriamento remoto e exibido em mapas interativos com uma interface amigável para todo tipo de usuário. (Setembro/2024 - Agosto/2025)",
-    contr: "Atuei como desenvolvedor full-stack, trabalhando principalmente com a criação de interface web para visualização dos dados, integração entre front-end e back-end, containerização dos serviços e produção de relatório científico aprovado no Science & Bussiness Connection 2025 e avaliado com nota 9.34 no SICINPE 2025. Este projeto me proporcionou uma grande experiência com desenvolvimento full-stack e processamento de imagem, além de produzir um produto capaz de impactar positivamente na sociedade.",
+    contr: "Atuei como desenvolvedor full-stack, trabalhando principalmente com a criação de interface web para visualização dos dados, integração entre front-end e back-end e containerização dos serviços. Projeto aprovado no Science & Bussiness Connection 2025 e avaliado com nota 9.34 no SICINPE 2025. Este projeto me proporcionou uma grande experiência com desenvolvimento full-stack e processamento de imagem, além de produzir um produto capaz de impactar positivamente na sociedade.",
     hardskils: ["Python", "Flask", "HTML 5", "CSS 3", "JavaScript", "Docker"],
     softskills: ["Comunicação", "Trabalho em Equipe", "Proatividade", "Organização", "Gestão de Tempo"],
     img: "../static/images/capas/relatorioic.png",
@@ -117,7 +135,7 @@ function renderProjetos(lista, containerId) {
       <a class="custom-link">
         <img src="${projeto.img}" alt="${projeto.titulo}">
         <h4>${projeto.titulo}</h4>
-        <p>${projeto.desc}</p>
+        <p> ${projeto.desc}</p>
       </a>
     `;
     card.addEventListener("click", () => openModal(projeto));

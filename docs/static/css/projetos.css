@@ -18,7 +18,7 @@
     background-color: #ffffff;
     padding: 20px;
     border-radius: 12px;
-    width: 20%;
+    width: 28%;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -130,7 +130,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: left;
     transition: all 0.3s ease;
-    cursor: default;
+    cursor: pointer;
 }
 
 .proj-card:hover {
@@ -154,6 +154,14 @@
     line-height: 1.5;
     color: #7f8c8d;
 }
+
+.proj-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
 
 .badge {
   display: inline-block;
@@ -187,6 +195,10 @@
   width: 100%;
   border-radius: 12px;
   margin-bottom: 10px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  border-radius: 10px;
 }
 .modal-subtitulo {
   margin-top: 10px;
@@ -209,4 +221,10 @@
 
 @media (max-width: 600px) {
   .proj-container div { width: 90%; }
+}
+
+.projeto-descricao {
+  margin-top: 10px;
+  color: #34495e;
+  font-size: 0.15em;
 }
